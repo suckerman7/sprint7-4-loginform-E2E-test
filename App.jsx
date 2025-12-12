@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Login from './Login';
-import Success from './Success';
+import Login from './components/Login';
+import Success from './components/Success';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
