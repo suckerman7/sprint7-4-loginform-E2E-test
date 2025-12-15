@@ -1,8 +1,9 @@
 describe('Login Form Tests', () => {
 
  beforeEach(() => {
-  cy.visit('http://localhost:3000/');
-});
+    cy.intercept('GET', '/api/login', mockUsers).as('getUsers');
+    cy.visit('http://localhost:5173/');
+  });
 
   it('Success sayfasına git', () => {
     cy.get('#data-email').type('test@test.com');
