@@ -99,7 +99,7 @@ export default function Login() {
         <Form onSubmit={handleSubmit}>
             <FormGroup>
                 <Label for='data-email'>Email</Label>
-                <input
+                <Input
                 id='data-email'
                 name='email'
                 type='email'
@@ -113,7 +113,7 @@ export default function Login() {
 
             <FormGroup>
                 <Label for='data-password'>Password</Label>
-                <input 
+                <Input 
                 id='data-password'
                 name='password'
                 type='password'
